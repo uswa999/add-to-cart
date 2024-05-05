@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add to cart</title>
+</head>
+<body>
+    <header>
+        <h1>Online Store</h1>
+        <div class="cart-container" onclick="addToCart()">
+            <div class="cart-icon">
+                <img src="images/shopping-cart.svg">
+            </div>
+            <div class="cart-count" id="cartCount">0</div>        
+        </div>
+    </header>
+    <div class="container">
+         <div class="product">
+            <img src="images/eyeglasses-wear-removebg-preview.png">
+            <div class="product-1">
+                <p>$33.40</p>
+                <button onclick="addCart('eyeglasses')">Add to Cart</button>
+            </div>
+         </div>
+         <div class="product">
+            <img src="images/T-shirt.png">
+            <p>$33.40</p>
+            <button onclick="addCart('T-shirt')">Add to Cart</button>
+         </div>
+         <div class="product">
+             <img src="images/watch.png">
+             <p>$33.40</p>
+             <button onclick="addCart('Watch')">Add to cart</button>
+         </div>
+         <div class="product">
+            <img src="images/shoes.png">
+            <div class="product-1">
+                <p>$33.40</p>
+                 <button onclick="addCart('sports-shoes')">Add to Cart</button>
+            </div>
+         </div>
+    </div>
+    <div id="sidebar">
+        <h2>Cart</h2>
+        <ul id="cartItems"></ul>
+    </div>
+    <div class="menu-icon" onclick="toggleSidebar()">
+         <div></div>
+         <div></div>
+         <div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
